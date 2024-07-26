@@ -1,0 +1,695 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------------- */
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Noto Serif JP", serif;
+    color: #7A5116; 
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/* 大きな背景画像 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+/* ボタン */
+.button {
+    display: inline-block;
+    font-size: 55px;
+    font-family: "Noto Sans JP";
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    background: #33a98a;
+    color: #fff;
+    border-radius: 35px;
+    border-color: #008562;
+    border-width: 1px 10px 10px 1px;
+    padding: 64px 128px;
+    margin-top: 150px;
+}
+.button:hover {
+    background: #45b296;
+}
+/* HOME
+------------------------------------- */
+#home {
+    background-image: url(../images/rose.jpg);
+    min-height: 300vh;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 上下に要素を配置 */
+    align-items: center; /* 中央に配置 */
+}
+.title1 {
+    margin-top: 100px;
+}
+.shadow-text1 {
+    display:inline-block;
+    font-size: 80px;
+    font-weight: normal;
+    color: #DA525E;
+    text-shadow: 2px 2px 2px white;
+    letter-spacing: 0.1em;
+}
+.shadow-text2 {
+    display:inline-block;
+    font-size: 100px;
+    font-weight: normal;
+    color: #ab9744;
+    text-shadow: 2px 2px 2px white;
+    letter-spacing: 0.1em;
+}
+.shadow-text3 {
+    display:inline-block;
+    font-size: 55px;
+    font-weight: normal;
+    color: #a58228 ;
+    text-shadow: 2px 2px 2px white;
+    letter-spacing: 0.1em;
+}
+#home .item1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+#home .item1 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.circles {
+    display: flex;
+    justify-content: center; /* コンテンツの中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    gap: 20px; /* 丸の間のスペース */
+    margin: 50px;
+}
+.circle {
+    display: inline-block; /* インラインブロック要素として表示 */
+    background: linear-gradient(#ffffff, #C4AF5D);
+    text-align: center; /* テキストを中央揃え */
+    font-size: 15px;
+    font-weight: normal;
+    color: #7A5116;
+    width: 100px; /* 幅 */
+    height: 100px; /* 高さ */
+    line-height: 100px; /* テキストの行の高さを要素の高さに合わせる */
+    border-radius: 50%; /* 角を丸くして円形にする */
+    margin: 10px;
+    padding: 75px;
+}
+/* SECOND
+------------------------------------- */
+
+#second {
+    background-image: url(../images/hand.jpg);
+    min-height: 300vh;
+}
+.second-content {
+    text-align: center;
+}
+.second-content h4 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: thin;
+    letter-spacing: 0.3em;
+    background: #E4898A;
+    color: #fff;
+    padding: 18px 32px;
+    margin: 1200px 0 42px;
+}
+.second-content h1 {
+    display: block;
+    font-size: 65px;
+    font-weight: thin;
+    letter-spacing: 0.3em;
+    color: #7A5116;
+}
+/* TRIRD
+------------------------------------- */
+
+#third {
+    background-image: url(../images/woman.jpg);
+    min-height: 300vh;
+}
+.third-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300vh;
+    position: relative;
+}
+.vertical-text1 {
+    position: absolute;
+    writing-mode: vertical-rl;
+    padding: 10px;
+    background-color: #fff;
+    margin: 5px;
+    font-size: 65px;
+    top: 100px;
+    left: 250px; 
+}   
+.vertical-text2 {
+    position: absolute;
+    writing-mode: vertical-rl;
+    padding: 10px;
+    background-color: #fff;
+    margin: 5px;    
+    font-size: 65px;
+    top: 45%;
+    left: 150px;
+    transform: translate(-50%, -50%);
+}
+.vertical-text3 {
+    position: absolute;
+    writing-mode: vertical-rl;
+    padding: 10px;
+    background-color: #fff;
+    margin: 5px;
+    font-size: 85px;
+    bottom: 150px;
+    right: 150px;
+    color: #DA525E;
+}
+/* FOURTH
+------------------------------------- */
+
+#fourth {
+    background-color: #FCD9C6;
+    min-height: 300vh;
+}
+.fourth-content {
+    text-align: center;
+}
+.fourth-content h4 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: thin;
+    letter-spacing: 0.3em;
+    color: #DA525E;
+    border-color: #DA525E;
+    border-width: 3px;
+    border-style: solid;
+    margin-top: 300px;
+    padding: 0 100px 0 100px;
+}
+.fourth-content h1 {
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    color: #7A5116;
+}
+.fourth-content h2 {
+    display: inline-block;
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    color: #DA525E;
+}
+.fourth-content h3 {
+    display: inline-block;
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    color: #7A5116;
+}
+.box1 {
+    display: inline-block;
+    background: #FEF0E9;
+    text-align: center;
+    font-size: 45px;
+    font-weight: normal;
+    color: #fff;
+    width: 900px;
+    height: 300px;
+    line-height: 100px; /* テキストの行の高さを要素の高さに合わせる */
+    margin: 10px;
+}
+.box2 {
+    display: inline-block;
+    background: #EFAAA1;
+    text-align: center;
+    font-size: 35px;
+    font-weight: normal;
+    color: #fff;
+    letter-spacing: 0.3em;
+    margin: 25px;
+    padding: 0 30px 0 30px;
+}
+.fourth-content p {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: thin;
+    letter-spacing: 0.3em;
+    line-height: 2.5;
+    color: #7A5116;
+    font-family: "Noto Sans JP";
+}
+/* FIFTH
+------------------------------------- */
+
+#fifth {
+    background-color: #7D675C;
+    min-height: 350vh;
+}
+.fifth-content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#fifth .sample {
+    display: inline-block;
+}
+#fifth h1 {
+    display: inline-block;
+    font-size: 65px;
+    color: #FEFBA2;
+    font-weight: normal;
+    letter-spacing: 0.3em;
+    margin-top: 300px;
+    padding: 10px;
+}
+#fifth h2 {
+    display: inline-block;
+    font-size: 55px;
+    color: #Fff;
+    font-weight: normal;
+    letter-spacing: 0.3em;
+    margin-top: 10px;
+    padding: 10px;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center;     /* 縦方向の中央揃え */
+    background-color: #968075;
+    height: auto; /* 高さを自動に */
+    width: 100%; /* 幅を100%に */
+    padding: 20px; /* パディングを追加 */
+}
+#fifth .item3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%; /* 2列にするために45%に設定（スペースを考慮） */
+    margin: 10px; /* マージンを調整 */
+}
+.square {
+    display: inline-block;
+    background: #856F64;
+    text-align: center;
+    font-size: 45px;
+    font-weight: thin;
+    color: #fff;
+    letter-spacing: 0.3em;
+    line-height: 2.5;
+}
+#fifth .item3 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* SIXTH
+------------------------------------- */
+#sixth {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center;    /* 縦方向の中央揃え */
+    background-color: #FEF0E9; /* ページ全体の背景色 */
+    min-height: 150vh;
+}
+.sixth-content {
+    background-color: #ffffff; /* コンテナの背景色 */
+    width: 90%; /* コンテナの幅 */
+    max-width: 1000px; /* コンテナの最大幅 */
+    height: 100%; /* コンテナの高さ */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 上下に要素を配置 */
+    border-radius: 25%;
+}
+
+.sixth-content h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 30px;
+    font-family: "Noto Sans JP";
+    font-weight: normal;
+    letter-spacing: 0.1em; 
+    background: #E4898A;
+    color: #fff;
+    border-radius: 35px;
+}
+#sixth .shape {
+    display: flex;
+    justify-content: space-around; /* 左右に要素を配置 */
+    align-items: flex-end; /* 下部に要素を配置 */
+}
+#sixth img {
+    max-width: 25%;
+    height: auto;
+}
+.sixth-content h1 {
+    font-weight: thin;
+    color: #7A5116;
+    font-size: 65px;
+    max-width: 100%;
+    line-height: 1.5;
+    letter-spacing: 0.3em; 
+}
+.sixth-content h2 {
+    font-weight: thin;
+    color: #DA525E;
+    font-size: 65px;
+    max-width: 100%;
+    line-height: 1.5;
+    letter-spacing: 0.3em; 
+}
+/* SEVENTH
+------------------------------------- */
+
+#seventh {
+    background-color: #E4898A;
+    min-height: 400vh;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center;    /* 縦方向の中央揃え */
+}
+#seventh h1 {
+    text-align: center;
+    font-size: 85px;
+    letter-spacing: 0.3em;
+    color: #fff;
+    margin: 150px;
+}
+.spaces {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 各コンテナの間にスペースを配置 */
+    align-items: center; /* コンテナを中央に配置 */
+}
+.space {
+    background-color: #ffffff; /* コンテナの背景色 */
+    width: 90%; /* コンテナの幅 */
+    flex-grow: 1; /* 各コンテナの高さを均等に設定 */
+    margin: 15px 0; /* 各コンテナの間にマージンを追加 */
+    padding: 10px; /* 内部パディング */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 上下に要素を配置 */
+}
+.seventh-content h2 {
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 35px;
+    letter-spacing: 0.3em;
+    color: #7A5116;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.seventh-content h3 {
+    font-size: 45px;
+    letter-spacing: 0.3em;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seventh-content p {
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #7A5116;
+    line-height: 2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* EIGHTH
+------------------------------------- */
+#eighth {
+    background-image: url(../images/flower.jpg);
+    min-height: 300vh;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center;    /* 縦方向の中央揃え */
+}
+.goods {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央に配置 */
+    position: relative;
+}
+.vertical-text4 {
+    font-size: 65px;
+    letter-spacing: 0.3em;
+    writing-mode: vertical-rl;
+    color: #7A5116;
+    text-shadow: 2px 2px 2px white;
+    transform: translateY(-70%);
+    transform: translateX(-70%);
+}
+.vertical-text5 {
+    font-size: 85px;
+    letter-spacing: 0.3em;
+    writing-mode: vertical-rl;
+    color: #DA525E;
+    text-shadow: 2px 2px 2px white;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+#eighth .item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+#eighth .item1 img {
+    max-width: 100%;
+    height: auto;
+}
+.buttons {
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .button {
+        font-size: 20px; /* フォントサイズを調整 */
+        padding: 30px 60px; /* パディングを調整 */
+        margin-top: 50px; /* マージンを調整 */
+    }
+    .big-bg {
+        height: 100vh; /* 高さを100vhに設定 */
+        width: auto;
+        flex-direction: column; /* コンテンツを縦方向に配置 */
+        padding: 20px; /* パディングを追加 */
+    }
+    #HOME {
+        min-height: auto; /* モバイルでの高さ調整 */
+    }
+    .shadow-text1, .shadow-text2, .shadow-text3 {
+        font-size: 30px;
+    }
+    #home .item1 {
+        max-width: 60%; /* 画像の最大幅を調整 */
+    }
+    .circles {
+        flex-direction: column; /* モバイルで縦に並べる */
+        gap: 10px; /* 丸の間のスペースを調整 */
+        margin: 30px 0; /* モバイルでのマージン調整 */
+    }
+    .circle {
+        width: 70px; /* 幅を調整 */
+        height: 70px; /* 高さを調整 */
+        line-height: 70px; /* テキストの行の高さを要素の高さに合わせる */
+        font-size: 11px; /* フォントサイズを調整 */
+    }
+    #second {
+        min-height: 100vh; /* モバイルでの高さ調整 */
+    }
+    .second-content h4 {
+        font-size: 20px;
+        padding: 10px 20px;
+        margin: 200px 0 20px; /* モバイルでのマージン調整 */
+    }
+    .second-content h1 {
+        font-size: 35px;
+    }
+    #third {
+        min-height: 100vh; /* モバイルでの高さ調整 */
+    }
+    .vertical-text1, .vertical-text2, .vertical-text3 {
+        padding: 5px; /* パディングを調整 */
+    }
+    .vertical-text1 {
+        position: absolute;
+        writing-mode: vertical-rl;
+        top: 50px;
+        left: 95px; /* 左に配置 */
+        font-size: 25px;
+    }
+    .vertical-text2 {
+        position: absolute;
+        writing-mode: vertical-rl;
+        top: 50%;
+        left: 60px;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+    }
+    .vertical-text3 {
+        position: absolute;
+        writing-mode: vertical-rl;
+        bottom: 50px;
+        right: 50px; /* 右に配置 */
+        font-size: 35px;
+    }
+    #fourth {
+        min-height: 220vh; /* モバイルでの高さ調整 */
+    }
+    .fourth-content h4 {
+        font-size: 20px;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+    .fourth-content h1, .fourth-content h2, .fourth-content h3 {
+        font-size: 30px;
+    }
+    .box1 {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        letter-spacing: 0em;
+        line-height: normal;
+    }
+    .box2 {
+        font-size: 18px;
+        padding: 2.5px 5px;
+        letter-spacing: 0em;
+    }
+    .fourth-content p {
+        font-size: 15px;
+        line-height: 1.5;
+        letter-spacing: 0em;
+    }
+    #fifth {
+        min-height: 270vh; /* モバイルでの高さ調整 */
+    }
+    #fifth h1 {
+        font-size: 30px;
+        margin-top: 150px;
+    }
+    #fifth h2 {
+        font-size: 25px;
+    }
+    .items {
+        padding: 10px;
+    }
+    #fifth .item3 {
+        width: 90%; /* モバイルでは1列にする */
+    }
+    .square {
+        font-size: 20px;
+    }
+    #sixth {
+        min-height: 90vh; /* モバイルでの高さ調整 */
+    }
+    .sixth-content {
+        width: 99%; /* コンテナの幅を調整 */
+        border-radius: 10%; /* ボーダーの半径を調整 */
+    }
+    .sixth-content h4 {
+        font-size: 20px; /* フォントサイズを調整 */
+        padding: 10px; /* パディングを調整 */
+    }
+    .sixth-content h1, .sixth-content h2 {
+        font-size: 25px; /* フォントサイズを調整 */
+    }
+    #sixth img {
+        max-width: 30%; /* 画像の最大幅を調整 */
+    }
+    #seventh {
+        min-height: 250vh; /* モバイルでの高さ調整 */
+    }
+    #seventh h1 {
+        font-size: 35px;
+        margin: 30px;
+    }
+    .space {
+        width: 90%;
+        margin: 5px 0;
+    }
+    .seventh-content h2 {
+        font-size: 20px;
+        letter-spacing: 0em;
+    }
+    .seventh-content h3 {
+        font-size: 25px;
+    }
+    .seventh-content p {
+        font-size: 15px;
+        letter-spacing: 0em;
+    }
+    #eighth {
+        min-height: 200vh; /* モバイルでの高さ調整 */
+    }
+    .vertical-text4 {
+        font-size: 40px;
+    }
+    .vertical-text5 {
+        font-size: 50px;
+        top: 30%;
+        left: 10%;
+    }
+    .goods {
+        width: 100%;
+        padding: 10px;
+    }
+    #eighth .item1 {
+        max-width: 60%; /* 画像の最大幅を調整 */
+    }
+}
