@@ -1,2 +1,15 @@
 images/
 mv bottle.jpg images/
+git add images/example.jpg
+git rm example.jpg  # 元の場所から削除
+git commit -m "Move example.jpg to images folder"
+mv bottle.png images/
+mv favicon.png images/
+mv flower.jpg images/
+mv hand.jpg images/
+mv rose.jpg images/
+mv trouble1.jpg images/
+mv trouble2.jpg images/
+mv trouble3.jpg images/
+mv trouble4.jpg images/
+mv woman.jpg images/
