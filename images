@@ -13,3 +13,7 @@ mv trouble2.jpg images/
 mv trouble3.jpg images/
 mv trouble4.jpg images/
 mv woman.jpg images/
+cp /path/to/your/photos/*.jpg images/
+git add images/
+git commit -m "Add photos to images folder"
+git push origin main  # 適切なブランチ名を使用
